@@ -1,0 +1,24 @@
+[general]
+enable_proxy_pool = true
+proxy_port = 10710
+cf_max_retries = 10
+browser_headless = false
+browser_incognito = true
+
+[scrapers.default]
+requests_per_ip = 0
+delay_range = [0,0]
+
+ [scrapers.docln]
+ requests_per_ip = 50
+ delay_range = [0, 0]
+ base_url = "https://docln.net"
+
+[scrapers.booktoki]
+ requests_per_ip = 500
+ delay_range = [0, 0]
+ base_url = "https://booktoki469.com"
+
+[scrapers.novelfire]
+ requests_per_ip = 0
+ delay_range = [0, 0]
